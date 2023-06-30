@@ -1,0 +1,38 @@
+# Description of the application for the Omniverse Launcher
+
+name = "My App"             # displayed application name
+shortName = "My App"        # displayed application name in smaller card and library view
+version = "${version}"      # version must be semantic
+kind = "app"                # enum of "app", "connector" and "experience" for now
+latest = true               # boolean for if this version is the latest version
+slug = "my_app"             # unique identifier for component, all lower case, persists between versions
+productArea = "My Company"  # displayed before application name in launcher
+category = "Apps"           # category of content
+channel = "release"         # 3 filter types [ "alpha", "beta", "release "]
+enterpriseStatus = false    # Set true if you want this package to show in enterprise launcher
+
+# values for filtering content
+tags = [
+  "Media & Entertainment",
+  "Manufacturing",
+  "Product Design",
+  "Scene Composition",
+  "Visualization",
+  "Rendering"
+]
+
+# string array, each line is a new line, keep lines under 256 char and keep lines under 4
+description = [
+ "My App is an application to showcase how to build an Omniverse App. ",
+ "FEATURES:",
+ "- Small and simple.",
+ "- Easy to change."
+]
+
+# array of links for more info on product
+[[links]]
+title = "Release Notes"
+url = "https://google.com"
+[[links]]
+title = "Documentation"
+url = "https://google.com"

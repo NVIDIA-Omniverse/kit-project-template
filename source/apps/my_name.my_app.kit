@@ -1,0 +1,57 @@
+[package]
+title = "My Simple Application"
+
+version = "1.0.0"
+
+description = """This Simple application shows you how to make an application"""
+
+# Keywords make  it browseable in UI using the "experience" filter
+keywords = ["app"]
+
+[dependencies]
+# Create Kit UI Based applications
+"omni.app.editor.base" = {}
+
+"omni.hello.world" = {}
+
+# Vulkan shader caches
+"omni.rtx.shadercache.vulkan" = {}
+
+# DX shader caches (windows only)
+[dependencies."filter:platform"."windows-x86_64"]
+"omni.rtx.shadercache.d3d12" = {}
+
+[settings.app]
+fastShutdown = true
+
+# Register extension folders from this repo in kit
+# These are the paths where Kit looks for extensions
+# Your application is using Extensions from your application
+# Here they are setup into a single folder "source/extensions" but you can have you own structure if you need
+# see we also add the Extension from the Base application using their extscache
+[settings.app.exts]
+folders.'++' = ["${app}/../extensions"]
+
+# Public extension registries
+[settings.exts."omni.kit.registry.nucleus"]
+registries = [
+    { name = "kit/default", url = "https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/shared" },
+    { name = "kit/sdk", url = "https://ovextensionsprod.blob.core.windows.net/exts/kit/prod/sdk/${kit_version_short}/${kit_git_hash}" },
+]
+
+
+########################################################################################################################
+# BEGIN GENERATED PART (Remove from 'BEGIN' to 'END' to regenerate)
+########################################################################################################################
+
+# Kit SDK Version: 105.0.1+release.109416.fc39ae6e.tc
+
+# Version lock for all dependencies:
+[settings.app.exts]
+enabled = [
+	"omni.hello.world-1.0.0",
+]
+
+########################################################################################################################
+# END GENERATED PART
+########################################################################################################################

@@ -1,0 +1,20 @@
+# all folders starting with _ are local
+_*/
+
+.DS_Store
+**/.vscode/ipch
+
+# byte-compiled python files
+*.py[cod]
+
+# packman .user config
+*.packman.xml.user
+
+# kit user config
+deps/**/user.toml
+
+
+/.vs
+
+/app
+/kit

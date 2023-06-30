@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "*.kit": "toml",
+    },
+    "editor.rulers": [120],
+
+    // Python modules search paths:
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/source/extensions/omni.hello.world",
+    ],
+
+    // Python & Pylance Setup
+    "python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "${workspaceFolder}/kit/python/python.exe",
+
+    // We use "black" as a formatter:
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "120"],
+
+    // Use flake8 for linting
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+}

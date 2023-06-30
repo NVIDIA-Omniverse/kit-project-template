@@ -1,0 +1,28 @@
+########################################################################################################################
+# Repo tool base settings
+########################################################################################################################
+
+[repo]
+
+# Use the Kit Template repo configuration as a base. Only override things specific to the repo.
+import_configs = [
+    "${root}/_repo/deps/repo_kit_tools/kit-template/repo.toml",
+    "${root}/_repo/deps/repo_kit_tools/kit-template/repo-external.toml",
+]
+
+extra_tool_paths = [
+	"${root}/kit/dev",
+]
+
+
+########################################################################################################################
+# Extensions precacher
+########################################################################################################################
+
+[repo_precache_exts]
+# Apps to run and precache
+apps = [
+    "${root}/source/apps/my_name.my_app.kit"
+]
+
+

@@ -2,6 +2,8 @@
 
 This project is a template for developing apps and extensions for *Omniverse Kit*.
 
+[Documentation](https://docs.omniverse.nvidia.com/kit/docs/kit-project-template)
+
 # Getting Started
 
 1. Fork and clone this repo, for example in `C:\projects\kit-project-template`

@@ -147,4 +147,9 @@ To make extension available to other users use [Github Releases](https://docs.gi
 2. For each new release increment extension version (in `extension.toml`) and update the changelog (in `docs/CHANGELOG.md`). [Semantic versionning](https://semver.org/) must be used to express severity of API changes.
 
 # Contributing
+
 The source code for this repository is provided as-is and we are not accepting outside contributions.
+
+# License
+
+By using this solution you agree to the terms of this [License](LICENSE) . The most recent version of the License is available [here](https://docs.omniverse.nvidia.com/composer/latest/common/NVIDIA_Omniverse_License_Agreement.html).

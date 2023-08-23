@@ -115,7 +115,7 @@ You should see a menu in the top left. From here you can enable more extensions 
 
 To run tests we run a new process where only the tested extension (and it's dependencies) is enabled. Like in example above + testing system (`omni.kit.test` extension). There are 2 ways to run extension tests:
 
-1. Run: `tools\test_ext.bat omni.hello.world  --ext-folder source/extensions`
+1. Run: `tools\test_ext.bat omni.hello.world`
 
 That will run a test process with all tests and exit. For development mode pass `--dev`: that will open test selection window. As everywhere, hotreload also works in this mode, give it a try by changing some code!
 

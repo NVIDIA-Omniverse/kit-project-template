@@ -10,11 +10,11 @@ _*/
 # packman .user config
 *.packman.xml.user
 
-# kit user config
-deps/**/user.toml
 
 
 /.vs
 
 /app
 /kit
+/data
+/logs
